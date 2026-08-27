@@ -13,6 +13,7 @@
 	<properties>
 		<spring.version>5.2.3.RELEASE</spring.version>
 		<fileupload.version>1.3.2</fileupload.version>
+		<spring-beans.version>5.2.23.RELEASE</spring-beans.version>
 	</properties>
 
 	<!-- Dependencies begin here -->
@@ -67,6 +68,13 @@
 			<artifactId>spring-core</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+		<!-- Pin transitive dependency org.springframework:spring-beans for security update -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${spring-beans.version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
@@ -119,7 +127,7 @@
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
-			<version>2.4</version>
+			<version>2.14.0</version>
 		</dependency>
 
 		<dependency>
@@ -136,7 +144,7 @@
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-collections4</artifactId>
-			<version>4.0</version>
+			<version>4.1</version>
 		</dependency>
 	</dependencies>
 
